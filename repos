@@ -1,0 +1,12 @@
+java-bigquerystorage
+java-bigquery
+java-datastore
+java-firestore
+java-logging
+java-logging-logback
+java-pubsub
+java-pubsublite
+java-spanner
+java-spanner-jdbc
+java-storage
+java-storage-nio

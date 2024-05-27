@@ -1,0 +1,4 @@
+*.swp
+*.swo
+java-bigtable/
+clients/
