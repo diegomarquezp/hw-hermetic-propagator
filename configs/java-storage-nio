@@ -25,4 +25,4 @@ libraries:
     api_id: "storage.googleapis.com"
     library_type: "OTHER"
     codeowner_team: "@googleapis/cloud-storage-dpe"
-    GAPICs:
+    GAPICs: []
