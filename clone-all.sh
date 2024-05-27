@@ -5,6 +5,10 @@ target_dir="clients"
 
 pushd "${script_dir}"
 
+if [[ ! -d "java-bigtable" ]]; then
+  bash "${script_dir}/clone-repo.sh" "java-bigtable"
+fi
+
 if [[ -d "${target_dir}" ]]; then
   exit 0
 fi
