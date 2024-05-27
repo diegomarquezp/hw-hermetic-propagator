@@ -36,5 +36,5 @@ libraries:
     excluded_poms: "google-cloud-storage-bom,google-cloud-storage"
     recommended_package: "com.google.cloud.storage"
     GAPICs:
-    - proto_path: google/storage/v2
-    - proto_path: google/storage/control/v2
+      - proto_path: google/storage/v2
+      - proto_path: google/storage/control/v2

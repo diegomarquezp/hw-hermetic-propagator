@@ -30,6 +30,6 @@ libraries:
     extra_versioned_modules: "datastore-v1-proto-client"
     excluded_poms: "grpc-google-cloud-datastore-v1"
     recommended_package: "com.google.cloud.datastore"
-  GAPICs:
-  - proto_path: google/datastore/v1
-  - proto_path: google/datastore/admin/v1
+    GAPICs:
+      - proto_path: google/datastore/v1
+      - proto_path: google/datastore/admin/v1

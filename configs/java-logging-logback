@@ -8,7 +8,7 @@ template_excludes:
   - '.github/blunderbuss.yml'
   - 'CONTRIBUTING.md'
   - '.github/auto-label.yaml'
-  - '.github/release-please.yml
+  - '.github/release-please.yml'
   - '.kokoro/requirements.in'
   - '.kokoro/requirements.txt'
   - '.kokoro/presubmit/graalvm-native.cfg'

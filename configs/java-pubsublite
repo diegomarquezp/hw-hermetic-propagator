@@ -30,4 +30,4 @@ libraries:
     api_id: "pubsublite.googleapis.com"
     recommended_package: "com.google.cloud.pubsublite.cloudpubsub"
     GAPICs:
-    - proto_path: google/cloud/pubsublite/v1
+      - proto_path: google/cloud/pubsublite/v1
