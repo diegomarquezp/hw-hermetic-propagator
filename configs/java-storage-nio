@@ -26,4 +26,4 @@ libraries:
     library_type: "OTHER"
     codeowner_team: "@googleapis/cloud-storage-dpe"
     GAPICs:
-	  - google/api #we use a dummy path to produce a no-op
+      - proto_path: google/api #we use a dummy path to produce a no-op
