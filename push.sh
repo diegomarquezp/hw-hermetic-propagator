@@ -15,9 +15,11 @@ pushd "${target_dir}"
 
 for repo in $(cat "${script_dir}/repos"); do
   pushd "${repo}"
-  git add .
-  git commit -m "${message}"
-  git push
+  if [[ -n $(git diff --shortstat) ]]; then
+    git add .
+    git commit -m "${message}"
+    git push
+  fi
   popd #repo
 done
 
