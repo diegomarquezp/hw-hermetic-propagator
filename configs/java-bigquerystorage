@@ -1,5 +1,5 @@
 gapic_generator_version: 2.40.1
-protoc_version: '25.2'
+protoc_version: '25.3'
 googleapis_commitish: 6f289d775912966eb0cf04bda91e5e355c998d30
 libraries_bom_version: 26.38.0
 template_excludes:
@@ -37,6 +37,6 @@ libraries:
       library_type: "GAPIC_COMBO"
       recommended_package: "com.google.cloud.bigquery.storage.v1"
       GAPICs:
-          - proto_path: google/bigquery/storage/v1
-          - proto_path: google/bigquery/storage/v1beta1
-          - proto_path: google/bigquery/storage/v1beta2
+          - proto_path: google/cloud/bigquery/storage/v1
+          - proto_path: google/cloud/bigquery/storage/v1beta1
+          - proto_path: google/cloud/bigquery/storage/v1beta2
