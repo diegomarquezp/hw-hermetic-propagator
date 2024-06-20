@@ -4,9 +4,9 @@ script_dir=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 target_dir="clients"
 target_files=(
   ".github/workflows/hermetic_library_generation.yaml"
-  ".github/workflows/update_googleapis_committish.yaml"
-  "generation/hermetic_library_generation.sh"
-  "generation/update_googleapis_committish.sh"
+  ".github/workflows/update_generation_config.yaml"
+  ".github/scripts/hermetic_library_generation.sh"
+  ".github/scripts/update_generation_config.sh"
 )
 
 pushd "${script_dir}"
@@ -16,6 +16,9 @@ for repo in $(cat "${script_dir}/repos"); do
   pushd "${repo}"
   if [[ -f ".github/.OwlBot.yaml" ]]; then
     mv ".github/.OwlBot.yaml" ".github/.OwlBot-hermetic.yaml"
+  fi
+  if [[ -d 'generation' ]]; then
+    rm -rdf generation
   fi
   for target_file in "${target_files[@]}"; do
     if [[ -f "${target_file}" ]]; then
