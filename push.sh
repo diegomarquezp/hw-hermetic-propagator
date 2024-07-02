@@ -16,6 +16,8 @@ pushd "${target_dir}"
 for repo in $(cat "${script_dir}/repos"); do
   pushd "${repo}"
   if [[ -n $(git diff --shortstat) ]]; then
+    git fetch --all
+    git merge origin/main
     git add .
     git commit -m "${message}"
     git push
